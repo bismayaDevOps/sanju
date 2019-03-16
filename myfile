@@ -8,4 +8,30 @@ public static void main(String[] arguments) {
 System. out. println("Let's do something using Java technology.");
 }
 }
+import java.util.*;
 
+public class ArraySet {
+
+    public static void main(String[] args) {
+
+        String[] array = {"a", "b", "c"};
+        Set<String> set = new HashSet<>(Arrays.asList(array));
+
+        System.out.println("Set: " + set);
+
+    }
+}
+
+import java.util.*;
+
+public class ArraySet {
+
+    public static void main(String[] args) {
+
+        String[] array = {"a", "b", "c"};
+        Set<String> set = new HashSet<>(Arrays.stream(array).collect(Collectors.toSet()));
+
+        System.out.println("Set: " + set);
+
+    }
+}
